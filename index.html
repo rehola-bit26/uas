@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piter Hurulean | Portfolio of Informatics Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header role="banner">
+    <div class="header-brand" aria-label="Piter Hurulean Portfolio Brand">
+      <span class="material-icons" aria-hidden="true">school</span>
+      Piter Hurulean
+    </div>
+    <nav role="navigation" aria-label="Primary navigation">
+      <a href="#about" tabindex="0">About Me</a>
+      <a href="#portfolio" tabindex="0">Portfolio</a>
+      <a href="#contact" tabindex="0">Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
+      <span class="material-icons" id="theme-icon" aria-hidden="true">dark_mode</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="about" id="about" tabindex="0" aria-label="About Piter Hurulean section">
+      <div class="avatar" aria-hidden="true">
+        <img 
+          src="C:\xampp\htdocs\uas PW\asset\profile pic.jpg"
+          alt="Portrait of Piter Hurulean, Informatics student, wearing a modern casual outfit, smiling, clean background" 
+          loading="lazy" 
+        />
+      </div>
+      <div class="about-text">
+        <h1>Piter Hurulean</h1>
+        <p>I am a 4th-semester Informatics student passionate about web development using HTML, CSS, JavaScript, and PHP. I build responsive, performant, and accessible applications applying modern design principles like flexbox layouts and dark/light mode toggling.</p>
+        <p>I strive to continuously improve my skills while building real-world projects that deliver beautiful and functional user experiences.</p>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio" tabindex="0" aria-label="Portfolio projects by Piter Hurulean">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid" role="list">
+        <article class="portfolio-card" role="listitem" tabindex="0" aria-label="Project: Personal Website">
+          <img class="portfolio-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5cf7f5fa-d14a-4627-be0d-a8cac2ee0f8a.png" alt="Screenshot preview of Personal Website project by Piter Hurulean" loading="lazy" />
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Personal Website</h3>
+            <p class="portfolio-description">A fully responsive, modern website featuring my biography, projects, and contact info. Built with HTML, CSS flexbox, and JavaScript for theme toggling.</p>
+            <div class="portfolio-tags" aria-label="Project tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card" role="listitem" tabindex="0" aria-label="Project: CRUD Web App">
+          <img class="portfolio-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3d2c89e-fb0d-421d-bc32-2951a698f95e.png" alt="Screenshot preview of CRUD Web App project by Piter Hurulean" loading="lazy" />
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">CRUD Web App</h3>
+            <p class="portfolio-description">A dynamic web application with create, read, update, and delete functionality built using PHP and JavaScript, highlighting real-time updates and form validation.</p>
+            <div class="portfolio-tags" aria-label="Project tags">
+              <span class="tag">PHP</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">MySQL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card" role="listitem" tabindex="0" aria-label="Project: Responsive Dashboard">
+          <img class="portfolio-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bbd9cc5f-4a96-46b4-a38f-e97fb5039b7d.png" alt="Screenshot preview of Responsive Dashboard project by Piter Hurulean" loading="lazy" />
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Responsive Dashboard</h3>
+            <p class="portfolio-description">A clean and intuitive admin dashboard layout built with flexbox supporting light/dark modes, real-time notifications, and accessibility features.</p>
+            <div class="portfolio-tags" aria-label="Project tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" tabindex="0" aria-label="Contact section">
+      <h2 style="color: var(--accent); font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.25rem); border-bottom: 3px solid var(--primary); padding-bottom: 8px; user-select: none;">Contact</h2>
+      <p>You can reach me on social media or send me an email:</p>
+      <ul style="list-style: none; padding-left: 0; font-size: 1rem;">
+        <li><a href="mailto:huruleanpiter@gmail.com" style="color: var(--link-color); text-decoration: underline;">email</a></li>
+        <li><a href="https://linkedin.com/in/piterhurulean" target="_blank" rel="noopener" style="color: var(--link-color); text-decoration: underline;">LinkedIn</a></li>
+        <li><a href="https://github.com/rehola-bit26" target="_blank" rel="noopener" style="color: var(--link-color); text-decoration: underline;">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <span>© 2024 Piter Hurulean - Informatics Student</span>
+    <nav aria-label="Social media links" class="social-links">
+      <a href="https://linkedin.com/in/piterhurulean" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <span class="material-icons" aria-hidden="true" style="font-size: 28px;">linkedin</span>
+      </a>
+      <a href="https://github.com/rehola-bit26" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <span class="material-icons" aria-hidden="true" style="font-size: 28px;">code</span>
+      </a>
+      <a href="mailto:huruleanpiter@gmail.com" aria-label="Send email to Piter Hurulean">
+        <span class="material-icons" aria-hidden="true" style="font-size: 28px;">email</span>
+      </a>
+    </nav>
+  </footer>
+  <script src="theme-toggle.js"></script>
+</body>
+</html>
